@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/global-styles/style.css" />
+    <title>Spotify playlist view</title>
+  </head>
+
+ 
+
+  <body>
+    <div class="home-page">
+      <nav class="home-page__nav">
+        <div class="home-page__nav__arrows-btn">
+          <a href="#"><div class="home-page__nav__arrows-btn__one"><img src="images/arrow.png"/><!--<img src="../Starter-code/public/images/arrow.png"/>--></div></a>
+          <a href="#"><div class="home-page__nav__arrows-btn__two"><img src="images/arrow.png"/><!--<img src="../Starter-code/public/images/arrow.png"/>--></div></a>
+        </div>
+        <div class="home-page__nav__user"><img src="images/user.png"/><a href="#">Julita Gomez</a><span class="tooltip">Julita Gomez</span></div>
+      </nav>
+      <header class="home-page__banner">
+        <div class="home-page__banner__header">
+        <sup>Playlist</sup>
+        <h1>Top songs </br>of the world</h1>
+        <p>Popular songs of Dua Lipa and many many others</p>
+        </div>
+      </header>
+
+      <div class="home-page__control-panel">
+        <a href="#"><div class="home-page__control-panel__play"><img src="images/play.png"/></div></a>
+        <a href="#"><div class="home-page__control-panel__subscribe"><img src="images/heart.png"/></div></a>
+        <a href="#"><div class="home-page__control-panel__other"><img src="images/menu.png"/></div></a>
+      </div>
+
+      <main class="home-page__play-list">
+        
+        <section class="home-page__play-list__table-body">
+            <table>
+                <tbody>
+                    <tr>
+                      
+                        <td> 01<img class = "home-page__play-list__table-body__cover" src="images/frame_1.png" alt=""> </td>
+                        
+                        <td> <sup>Flowers</sup></br>Flowers</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>3:20</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu">
+          <img src="images/menu.png" onclick="toggleMenu()"/>
+        
+         <div class="sub-menu-wrap" id="subMenu">
+
+           <div class="sub-menu">
+                 <div class="user-info">
+    
+                  </div>
+
+                  <a href="#" class="sub-menu-link">
+      
+                        <p>Add to queue</p>
+                  
+                  </a>
+                  <hr>
+                  <a href="#" class="sub-menu-link">
+                       
+                        <p>Go to the track</p>
+                        
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                       
+                        <p>Got to the artist</p>
+                       
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                       
+                        <p>Go to album</p>
+                        
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                       
+                        <p>Show content authors</p>
+                      
+                  </a>
+                  <hr>
+                  <a href="#" class="sub-menu-link">
+      
+                        <p>Add to playlist</p>
+                 
+                  </a>
+                  <a href="#" class="sub-menu-link">
+                        <p>Show content authors</p>
+                        <span>></span>
+                  </a>
+                  <hr>
+                  <a href="#" class="sub-menu-link">
+                        <p>Share</p>
+                        <span>></span>
+                  </a>
+
+            </div>
+
+          </div>
+        
+        
+        
+        </div></a>
+      </div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 02<img class = "home-page__play-list__table-body__cover" src="images/frame_2.png" alt=""></td>
+                        <td> <sup>Sos</sup></br>Kill Bill</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>2:32</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/>
+        
+        </div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 03<img class = "home-page__play-list__table-body__cover" src="images/frame_3.png" alt=""></td>
+                        <td> <sup>Gemini Rgihts</sup></br>Bad Habit</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>3:52</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 04<img class = "home-page__play-list__table-body__cover" src="images/frame_4.png" alt=""></td>
+                        <td> <sup>Talk To Me</sup></br>Talk To Me</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>2:28</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 05<img class = "home-page__play-list__table-body__cover" src="images/frame_5.png" alt=""></td>
+                        <td> <sup>Sour</sup></br>Good 4 u</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>2:58</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 06<img class = "home-page__play-list__table-body__cover" src="images/frame_6.png" alt=""></td>
+                        <td> <sup>Singiel</sup></br>INDUSTRY BABY </td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>3:32</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 07<img  class = "home-page__play-list__table-body__cover" src="images/frame_7.png" alt=""></td>
+                        <td> <sup>Fine Line</sup></br>Watermelon Sugar</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>2:54</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 08<img class = "home-page__play-list__table-body__cover"  src="images/frame_8.png" alt=""></div></td>
+                        <td> <sup>Fine Line</sup></br>Always</td>
+                        <td> <sup>Artists</sup></br>Flowers</td>
+                        <td> <sup>Time</sup></br>3:33</td>
+                        <td>
+                            <div class="home-page__play-list__table-body__table-control-panel">
+        <a href="#"><div class="home-page__play-list__table-body__heart"><img src="images/heart.png"/></div></a>
+        <a><div class="home-page__play-list__table-body__menu"><img src="images/menu.png" onclick="toggleMenu()"/></div></a>
+      </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+      </main> 
+
+
+      <footer class="home-page__footer">
+        
+  <div class="home-page__footer__footer-column">
+    <h3>Business</h3>
+    <ul>
+      <li><a href="#">Information</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Address</a></li>
+    </ul>
+  </div>
+  <div class="home-page__footer__footer-column">
+    <h3>Society</h3>
+    <ul>
+      <li><a href="#">Advertisement</a></li>
+      <li><a href="#">Investors</a></li>
+      <li><a href="#">Suppliers</a></li>
+    </ul>
+  </div>
+  <div class="home-page__footer__footer-column">
+    <h3>Useful Links</h3>
+    <ul>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Mobile Application</a></li>
+    </ul>
+  </div>
+  <div class="home-page__footer__social-media-buttons">
+    <a href="#" class="facebook-button"><img src="images/facebook-logo.png" /></a>
+    <a href="#" class="twitter-button"><img src="images/twiter.png"/></a>
+    <a href="#" class="instagram-button"><img src="images/instagram.png"/></a>
+  </div>
+
+  
+</footer>
+<div class="home-page__disclaimer-spotify">
+   
+  <div class="home-page__disclaimer-spotify__column">
+ <div class="line"></div>
+    <ul>
+      <li><a href="#">© 2023 Spotify</a></li>
+
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <script>
+
+
+let subMenu = document.getElementById("subMenu");
+function toggleMenu(){
+  subMenu.classList.toggle("open-menu");
+}
+
+    </script>
+   
+  </body>
+</html>
